@@ -1,0 +1,60 @@
+.item-lista {
+  width: 100%;
+  background-color: rgb(180, 171, 171);
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 5px;
+  text-align: left;
+} 
+
+.btnInfo {
+  background: rgb(131, 93, 180);
+  color: white;
+}
+
+.tarjeta-post {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9fa7a9;
+
+  .card {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: auto;
+    margin: 10px auto auto auto;
+
+    .card-body {
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(36, 21, 201);
+      }
+
+      .lista {
+        width: 100%;
+        max-height: 350px;
+        background-color: #f0f0f0;
+
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+      }
+    }
+  }
+}

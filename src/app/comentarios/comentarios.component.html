@@ -1,0 +1,12 @@
+<div class="tarjeta-post">
+  <div class="card" *ngFor="let comentario of comentarios">
+    <div class="card-body">
+      <h3 class="title">
+        <strong>{{ comentario["name"] }}</strong>
+      </h3>
+      <p class="item-lista">{{ comentario["body"] }}</p>
+      <br />
+      <p class="owner">{{ comentario["email"] }}</p>
+    </div>
+  </div>
+</div>

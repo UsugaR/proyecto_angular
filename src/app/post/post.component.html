@@ -1,0 +1,10 @@
+<div class="tarjeta-post">
+  <div class="card" *ngFor="let post of posts">
+    <div class="card-body">
+      <h3 class="title">
+        <strong>{{ post["title"] }}</strong>
+      </h3>
+      <p class="item-lista">{{ post["body"] }}</p>
+    </div>
+  </div>
+</div>

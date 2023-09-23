@@ -1,0 +1,27 @@
+<div class="tarjeta-post">
+  <div class="card" *ngFor="let usuario of usuarios">
+    <div class="card-body">
+      <h3 class="name">
+        <strong>{{ usuario["name"] }}</strong>
+      </h3>
+      <div>
+        <p>
+          Correo: <strong>{{ usuario["email"] }}</strong>
+        </p>
+        <p>
+          Website: <strong>{{ usuario["website"] }}</strong>
+        </p>
+        <p>
+          Company name: <strong>{{ usuario["company"]?.name }}</strong>
+        </p>
+        <p>
+          Ciudad: <strong>{{ usuario["address"]?.city }}</strong>
+        </p>
+
+        <p>
+          Phone: <strong>{{ usuario["phone"] }}</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
